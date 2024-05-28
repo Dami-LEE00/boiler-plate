@@ -4,12 +4,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "backend": "pm2 start index.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "damilee",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "body-parser": "^1.20.2",
     "express": "^4.19.2",
     "mongoose": "^8.4.0"
   }
